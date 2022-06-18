@@ -1,0 +1,144 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DDS_proj",
+		"_postman_id": "99a2d55b-170b-64f6-fe7b-eda36ff74001",
+		"description": "Typescript based backend trying to coonect to React Native proj.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Offers",
+			"request": {
+				"url": "http://localhost:3000/api/offers/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"ofer_lamb\",\n\t\"price\": 800,\n\t\n\t\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auctions",
+			"request": {
+				"url": "http://localhost:3000/api/auctions/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get Auctions "
+			},
+			"response": []
+		},
+		{
+			"name": "POST Auction",
+			"request": {
+				"url": "http://localhost:3000/api/auctions/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Mercedes\",\n\t\"price\": \"200230\",\n\t\"expires\":\"2025-12-10\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Offer",
+			"request": {
+				"url": "http://localhost:3000/api/offers/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Partner X\",\n\t\"price\": 2000,\n\t\"auction\": \"62ad85ee74646dd658e3c81c\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Auction",
+			"request": {
+				"url": "http://localhost:3000/api/auctions/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Mercedes\",\n\t\"price\": \"200230\",\n\t\"expires\":\"2025-12-10\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Offer",
+			"request": {
+				"url": "http://localhost:3000/api/offers/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Partner X\",\n\t\"price\": 2500,\n\t\"auction\": \"62ad85ee74646dd658e3c81c\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete offer",
+			"request": {
+				"url": "http://localhost:3000/api/offers/{{id}}",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "Delete an offer"
+			},
+			"response": []
+		},
+		{
+			"name": "delete auction",
+			"request": {
+				"url": "http://localhost:3000/api/auctions/{{id}}",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
